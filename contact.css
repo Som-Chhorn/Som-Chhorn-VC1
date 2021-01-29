@@ -1,13 +1,14 @@
 body{
     margin: 0;
 }
-.navbar1{
+.navbar{
 	display: flex;
 	justify-content: space-between;
 	overflow: hidden;
-  	background-color: #0f1123;
+  	background-color:#0f1123;
 	text-transform: uppercase;
-	top: 20px;
+	position: sticky;
+	top: 0;
 }
 ul {
     display: flex;
@@ -26,14 +27,8 @@ ul li a {
 ul li:hover{
 	background-color: red;
 }
-.contact{
-	background: #063766;
-	width: 100%;
-	height: 815px;
-	margin-top: 0;
-}
 input[type=text], select, textarea {
-	width: 100%;
+	width: 80.3%;
 	padding: 10px;
 	border: 1px solid #ccc;
 	border-radius: 4px;
@@ -57,20 +52,78 @@ input[type=text], select, textarea {
 	background-color: #eb0000;
   }
   
-  
-  .container5 {
-	border-radius: 5px;
-	background-color:#063766;
-	margin-left: 10%;
-	padding: 20px;
-	height: 97vh;
-	width: 77%;
-	color: white;
-	font-size: 20px;
-  }
+  .bios{
+	margin-top: 30%;
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	
+}
+input{
+	padding: 10px;
+	width: 32px;
+	box-sizing: border-box;
+}
+.fight{
+	text-align: center;
+	font-size: 70px;
+}
+@media(orientation: portrait) and (min-width:400px){
+	input[type = text]{
+		width: 8 0%;
+		height:5%;
+		
+	}
+	input[type = email]{
+		width: 80.1%;
+		margin-top: 2%;
+		height:5%;
+	}
+	input[type = submit]{
+		width: 40%;
+		background: rgb(30, 155, 172);
+		color: white;
+		height:5%;
+		
+	}
+	input[type = reset]{
+		width: 40%;
+		background: rgb(238, 197, 15);
+		color: white;
+		margin-top: 2%;
+		height:5%;
+	}
+}
+
+@media (orientation: landscape) and (min-width : 800px){
+	input[type = text]{
+		width: 40%;
+		height:5%;
+		
+	}
+	input[type = email]{
+		width: 80.4%;
+		margin-top: 2%;
+		height:5%;
+	}
+	input[type = submit]{
+		width: 40%;
+		background: rgb(30, 155, 172);
+		color: white;
+		height:5%;
+		
+	}
+	input[type = reset]{
+		width: 40%;
+		background: rgb(238, 197, 15);
+		color: white;
+		margin-top: 2%;
+		height:5%;
+	}
+
   address{
     margin-top: 20px;
-    color: white;
+    color: rgb(243, 243, 243);
     padding: 40px;
 }
 h3{
@@ -79,21 +132,19 @@ h3{
     font-family: serif;
 }
 .footers{
-	margin-right: 50px;
+	margin-right: 45px;
 }
 .style{
 	display: flex;
     justify-content: space-between;
 	align-items: center;
 }
-.cv{
-	width: 500px;
-	height: 150px;
-	background: rgba(122, 122, 122, 0.4);
-	margin-left: 55%;
-	padding: 20px;
-	margin-top: 60px;
-	text-align: center;
-	font-size: 30px;
-	color: rgb(196, 0, 0);
-} 
+.full{
+	height: auto;
+	width: 100%;
+	background: rgba(114, 119, 117, 0.4);
+}
+.fight{
+	color: rgb(15, 15, 15);
+	font-size: 40px;
+}
